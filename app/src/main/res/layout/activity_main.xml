@@ -8,30 +8,34 @@
     tools:context="unipe.pos.alexmartins.calculo_imc.MainActivity">
 
     <EditText
-        android:id="@+id/txtPeso"
+        android:id="@+id/weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Informe o peso"
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/txtAltura"
+        android:id="@+id/height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Informe a altura"
         android:inputType="numberDecimal" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
         android:baselineAligned="false"
         android:onClick="btnCalcularOnClick"
         android:text="Calcular" />
 
     <TextView
-        android:id="@+id/lblResultado"
+        android:id="@+id/result"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"/>
 
 </LinearLayout>
 
