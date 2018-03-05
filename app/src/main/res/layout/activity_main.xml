@@ -8,18 +8,18 @@
     tools:context="unipe.pos.alexmartins.calculo_imc.MainActivity">
 
     <EditText
-        android:id="@+id/weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Informe o peso"
-        android:inputType="number" />
-
-    <EditText
         android:id="@+id/height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Informe a altura"
+        android:hint="Altura (cm)"
         android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:inputType="number" />
 
     <Button
         android:layout_width="match_parent"
