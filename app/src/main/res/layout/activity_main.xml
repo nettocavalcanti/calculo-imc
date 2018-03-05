@@ -8,34 +8,39 @@
     tools:context="unipe.pos.alexmartins.calculo_imc.MainActivity">
 
     <EditText
-        android:id="@+id/weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Informe o peso"
-        android:inputType="number" />
-
-    <EditText
         android:id="@+id/height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Informe a altura"
+        android:hint="Altura (cm)"
         android:inputType="numberDecimal" />
 
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:inputType="number" />
+
     <Button
+        android:id="@+id/bntCalculateId"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dip"
         android:layout_marginRight="50dip"
+        android:background="@color/colorPrimary"
         android:baselineAligned="false"
-        android:onClick="btnCalcularOnClick"
-        android:text="Calcular" />
+        android:text="Mostrar IMC"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/result"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/text_view_border"/>
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:baselineAligned="false"
+        android:gravity="center"
+         />
 
 </LinearLayout>
 
